@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=answer
+comment1.params=
+comment1.target=char\ accept()
+comment2.params=choice\ correct\ l
+comment2.target=boolean\ check(char,\ char,\ int)
+numComments=3
