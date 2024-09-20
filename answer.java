@@ -17,7 +17,7 @@ class answer extends Main
             {
                System.out.println(" Your answer is correct");
                System.out.println(" you have won:"+levels[l]);
-               System.out.println("Enter N to contine.");
+               System.out.println("Enter N to continue.");
                next=sc.next().charAt(0);
                if(next=='N')
                System.out.println("\f");
