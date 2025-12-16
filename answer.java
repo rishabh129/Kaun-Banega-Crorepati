@@ -17,14 +17,17 @@ class answer extends Main
             {
                System.out.println(" Your answer is correct");
                System.out.println(" you have won:"+levels[l]);
-               System.out.println("Enter N to continue.");
-               next=sc.next().charAt(0);
+               do{
+                System.out.println("Do you want to continue? Y/N");
+                next=sc.next().charAt(0);
+                }while((next!='Y')&&(next!='N'));
+
                if(next=='N')
-               System.out.println("\f");
+                return false;
+            else if(next=='Y')
                return(true);
             }
-            else
-            {
+            
                System.out.println("Your answer is  not correct");
                System.out.println("The correct answer is : "+ correct);
                if(l<4)
@@ -34,7 +37,7 @@ class answer extends Main
                else
                System.out.println(" You have won:"+levels[l-1]);
                return(false);
-            }
+            
         }
     }
 
